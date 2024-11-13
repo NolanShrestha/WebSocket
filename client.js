@@ -4,7 +4,7 @@ const readline = require('readline');
 const ws = new WebSocket('ws://localhost:8080');
 
 ws.on('open', () => {
-    console.log('Connected to server');
+    console.log('Connection to server successful!');
 });
 
 ws.on('message', (data) => {
